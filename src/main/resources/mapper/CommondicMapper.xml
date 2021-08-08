@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wuing.wordinfo.dao.CommondicMapper">
+  <resultMap id="BaseResultMap" type="com.wuing.wordinfo.model.Commondic">
+    <!--@mbg.generated-->
+    <id column="vc_id" property="vcId" />
+    <result column="original_id" property="originalId" />
+    <result column="vc_vocabulary" property="vcVocabulary" />
+    <result column="vc_sw" property="vcSw" />
+    <result column="exchange" property="exchange" />
+    <result column="tag" property="tag" />
+    <result column="vc_phonetic_uk" property="vcPhoneticUk" />
+    <result column="vc_phonetic_us" property="vcPhoneticUs" />
+    <result column="vc_frequency" property="vcFrequency" />
+    <result column="vc_difficulty" property="vcDifficulty" />
+    <result column="vc_acknowledge_rate" property="vcAcknowledgeRate" />
+    <result column="vc_study_user_count" property="vcStudyUserCount" />
+    <result column="pos" property="pos" />
+    <result column="collins" property="collins" />
+    <result column="oxford" property="oxford" />
+    <result column="bnc" property="bnc" />
+    <result column="frq" property="frq" />
+    <result column="vc_speech_uk" property="vcSpeechUk" />
+    <result column="vc_speech_us" property="vcSpeechUs" />
+    <result column="isword" property="isword" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.wuing.wordinfo.model.Commondic">
+    <!--@mbg.generated-->
+    <result column="vc_translation" property="vcTranslation" />
+    <result column="vc_translation_net" property="vcTranslationNet" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    vc_id, original_id, vc_vocabulary, vc_sw, exchange, tag, vc_phonetic_uk, vc_phonetic_us, 
+    vc_frequency, vc_difficulty, vc_acknowledge_rate, vc_study_user_count, pos, collins, 
+    oxford, bnc, frq, vc_speech_uk, vc_speech_us, isword
+  </sql>
+  <sql id="Blob_Column_List">
+    <!--@mbg.generated-->
+    vc_translation, vc_translation_net
+  </sql>
+</mapper>
